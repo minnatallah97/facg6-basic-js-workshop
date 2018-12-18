@@ -33,15 +33,18 @@
         false
         null
         undefined
-
+    ```
+    ```js
         var a = 7;
         if (a) {
-        console.log(a);
+          console.log(a);
         }
 
         if (b) {
-        console.log(b);
+          console.log(b);
         }
+    ```
+    ```js
         let defaultName;
         // instead of:
         if (username) {
@@ -56,23 +59,23 @@
     ```js
         // if-else are better for boolean values
         if (inputValue) {
-        // do some action
+          // do some action
         } else {
-        // return empty value error
+          // return empty value error
         }
 
         // switch are better for Multi way branching
         switch (tabValue) {
-        case "welcome":
+          case "welcome":
             // show welcome section
             break;
-        case "main":
+          case "main":
             // show main section
             break;
-        case "about-us":
+          case "about-us":
             // show about us section
             break;
-        default:
+          default:
             // show home section
         }
     ```
@@ -82,17 +85,17 @@
         // how to break the loop
 
         for (a = 0; a < 10; a = a + 1) {
-        console.log(a);
+          console.log(a);
         }
 
         // same thing we can do with while
         let a = 0;
         while (true) {
-        console.log(a);
-        a++;
-        if (a >= 10) {
+          console.log(a);
+          a++;
+          if (a >= 10) {
             break;
-        }
+          }
         }
     ```
 * Functions & scopes
@@ -102,14 +105,15 @@
         function foo () {}
         var foo = function () {}
         var foo = () => {}   // arrow function ES6
+        
         // difference between declaring and calling
         // function returns a value
         // parameters vs arguments
         // scopes
         function foo (b) {
-        var c = 7;
-        a = a + 8;  //can access a from parent scope "global"
-        return a/c;
+          var c = 7;
+          a = a + 8;  //can access a from parent scope "global"
+          return a/c;
         }
         var a = 5;
         console.log(b, c); // Reference Error
