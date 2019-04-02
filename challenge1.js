@@ -1,20 +1,20 @@
-var TAX_RATE = 0.08;
+n var TAX_RATE = 0.08;
 var PHONE_PRICE = 99.99;
 
 var bank_balance = 303.91;
 var amount = 0;
 
 function calculateTax(amount) {
-	// write your code here
+	return amount*TAX_RATE;
 }
 
 function formatAmount(amount) {
-	// write your code here;
+	return "$"+amount.toFixed(2);
 }
 
 // keep buying phones while you still have money
 while (amount < bank_balance) {
-	// write your code here;
+	amount = amount +PHONE_PRICE;
 }
 
 // don't forget to pay the government, too
